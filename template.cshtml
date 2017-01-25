@@ -1,0 +1,7 @@
+@foreach(var alert in Model.Alerts)
+{	
+	if(alert.Active)
+	{
+		<div class="alert @alert.Style" role="alert"><i class="@alert.Icon alert-icon"></i>@alert.Description</div>	
+	}
+}

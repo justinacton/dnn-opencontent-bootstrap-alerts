@@ -1,0 +1,35 @@
+{
+  "fields": {
+    "Alerts": {
+      "type": "array",
+      "items": {
+        "fields": {
+          "Active": {
+            "type": "checkbox"
+          },
+          "Title": {
+            "type": "text"
+          },
+          "Description": {
+            "type": "text"
+          },
+          "Icon": {
+            "type": "icon",
+            "glyphicons": false,
+            "bootstrap": false,
+            "fontawesome": true
+          },
+          "Style": {
+            "type": "select",
+            "optionLabels": [
+              "Success",
+              "Info",
+              "Warning",
+              "Danger"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

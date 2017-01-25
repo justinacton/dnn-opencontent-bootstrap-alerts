@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "Alerts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Active": {
+            "type": "boolean",
+            "title": "Active"
+          },
+          "Title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "Description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "Icon": {
+            "type": "string",
+            "title": "Icon"
+          },
+          "Style": {
+            "type": "string",
+            "title": "Style",
+            "enum": [
+              "alert-success",
+              "alert-info",
+              "alert-warning",
+              "alert-danger"
+            ],
+            "default": "Success",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}

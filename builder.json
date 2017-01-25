@@ -1,0 +1,69 @@
+{
+  "formfields": [
+    {
+      "fieldname": "Alerts",
+      "fieldtype": "array",
+      "subfields": [
+        {
+          "fieldname": "Active",
+          "title": "Active",
+          "fieldtype": "checkbox",
+          "advanced": false
+        },
+        {
+          "fieldname": "Title",
+          "title": "Title",
+          "fieldtype": "text",
+          "advanced": false
+        },
+        {
+          "fieldname": "Description",
+          "title": "Description",
+          "fieldtype": "text",
+          "advanced": false
+        },
+        {
+          "fieldname": "Icon",
+          "title": "Icon",
+          "fieldtype": "icon",
+          "iconoptions": {
+            "glyphicons": false,
+            "bootstrap": false,
+            "fontawesome": true
+          },
+          "advanced": false
+        },
+        {
+          "fieldname": "Style",
+          "title": "Style",
+          "fieldtype": "select",
+          "fieldoptions": [
+            {
+              "value": "alert-success",
+              "text": "Success"
+            },
+            {
+              "value": "alert-info",
+              "text": "Info"
+            },
+            {
+              "value": "alert-warning",
+              "text": "Warning"
+            },
+            {
+              "value": "alert-danger",
+              "text": "Danger"
+            }
+          ],
+          "advanced": true,
+          "required": true,
+          "hidden": false,
+          "default": "Success",
+          "dependencies": []
+        }
+      ],
+      "advanced": false
+    }
+  ],
+  "formtype": "object"
+}
